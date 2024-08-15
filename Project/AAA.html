@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="AAA.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Who Wants to Be a Millionaire</h1>
+        <p id="question">Who is the author of 'To Kill a Mockingbird'?</p>
+        <div class="options">
+            <button class="option" onclick="checkAnswer('My mother')">My mother</button>
+            <button class="option" onclick="checkAnswer('Money')">Money</button>
+            <button class="option" onclick="checkAnswer('13')">13</button>
+             
+        </div>
+        <div class="lifelines">
+            <button onclick="useLifeline('phoneAFriend')">Phone a Friend</button>
+            <button onclick="useLifeline('fiftyFifty')">50:50</button>
+            <button onclick="useLifeline('askTheAudience')">Ask the Audience</button>
+        </div>
+        <button id="nextQuestion" onclick="nextQuestion()">Next Question</button>
+        <p id="timeLeft">Time left: <span id="timer">10</span>s</p>
+    </div>
+
+    <script src="AAA.js"></script>
+</body>
+</html>

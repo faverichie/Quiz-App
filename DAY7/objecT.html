@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object in javascript</h1>
+
+    <script>
+        // syntax for creating an object
+        // let objectName = {
+        //     propertyName: propertyValue,
+        //     propertyName2: ropertyValue2
+        // }
+
+        // example: 
+        let users = {
+            id: 1,
+            name: 'Daniel Bryan',
+            address: 'Nigeria',
+            stack: 'frontend engineer', 
+            job: ()=>console.log(`${users.name} got a new job offer on the 29th july, 2024`)
+        }
+        console.log(users);
+
+        // accessing items from an Object
+        // using dot (.) notation method
+        // syntax: objectName.propertyName
+
+        // or
+        // using square bracket [] method
+        // objectName['propertyName']
+
+        console.log(users.name);
+
+        let userName = users.name
+        console.log(username);
+        console.log(users['stack']); 
+
+        // calling the function indise the Object
+        users.job();
+
+        // adding properties too an object 
+        // syntax: bjectName.newpropertyName = newproprertyValue
+        users.age = 25
+        users.salaryRoute = '$50,000'
+        console.log(users);
+
+        // deleting an object Property
+        // syntax: delete objectName['propertyName'];
+
+        delete users['age']
+        delete users['salaryRate'];
+        console.log(users);
+
+        
+    </script>
+
+
+</body>
+</html>

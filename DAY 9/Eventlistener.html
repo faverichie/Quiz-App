@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>event listener in javascript</h1>
+    <button id="btn">change color</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let div = document.getElementByClassName('div')
+        let body = document.body;
+
+        btn.addEventListener('mouseover', () => {
+            body.style.backhroundcolor = "green";
+            body.style.color = "white";
+        })
+    </script>
+</body>ja
+</html>

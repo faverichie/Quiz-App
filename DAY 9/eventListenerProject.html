@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>implement the number counter using event listener</h1>
+
+    <button>INCREASE</button>
+    <button>DECREASE</button>
+    <button>RESET</button>
+    <h1 id="num-value"></h1>
+
+    <script>
+        let btn = document.querySelectorAll("button");
+        let num = document.getElementById("num-value");
+        let count = 0;
+
+        function changeValue() {
+            if (count > 0) {
+                num.style.color = "green";
+            } else if (count < 0) {
+                num.style.color = "red";
+            } else {
+                num.style.color = "black";
+            }   
+            num.innerHTML = count;
+        }
+
+        // INCREASE BTN
+        btn[0].addEventListener('click', () => {
+            count++;
+            changeValue();
+        });
+
+        // DECREASE BTN
+        btn[1].addEventListener('click', () => {
+            count--;
+            changeValue();
+        });
+
+        // RESET BTN
+        btn[2].addEventListener('click', () => {
+            count = 0;
+            changeValue();
+        });
+    </script>
+</body>
+</html>

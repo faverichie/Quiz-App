@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my clear interval in javascript</h1>
+
+<script>
+    let counter = 0,
+    let my ClearInterval = setInterval(() => {
+        console.log(counter)
+        if (counter === 3) {
+            clearInterval(myClearInterval)
+        }
+        counter++;
+    }, 1000);
+    
+</script>
+</body>
+</html>

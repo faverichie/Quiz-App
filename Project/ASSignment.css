@@ -1,0 +1,30 @@
+.quiz-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 50%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  .answer-choices {
+    margin-top: 10px;
+  }
+  
+  #next-question {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #score-display {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+  }

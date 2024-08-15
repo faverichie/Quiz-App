@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>selector: querySelector</h1>
+    <h2>this is another content for the pablos</h2>
+    <h2>this is another content for the pablos</h2>
+    <h2>this is another content for the pablos</h2>
+
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse corporis officia saepe omnis eualias, repellendus aperiam eius nihil repudiandae! Quam velit repudiandae, odit ducimus maxime sint temporibus veniam magni!</p>
+
+    <p class="hello">hello world</p>
+
+    <script>
+        // selector in javascript based on querySelector
+
+        var heading = document.querySelector('h2');
+        var para = document.querySelector('#para');
+        var hello = document.querySelector('.hello');
+        console.log(heading);
+        console.log(para);
+
+         
+        para.style.backgroundColor = 'green';
+        hello.style.color = 'grey'
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>defauarelt parameters in javascript</h1>
+
+    <script>
+        // default parameters is a parameter that initially assigned a value
+
+        function commisionBase(price, rate, purchase = 3) {
+            let discount = price - (rate*price);
+            let amountToPay = discount*purchase;
+            return amountToPay;
+        }
+
+        console.log(commisionBase(4500, 0.1));
+        console.log(commisionBase(6500, 0.2));
+        console.log(commisionBase(7500, 0.5));
+        console.log(commisionBase(10500, 0.3));
+    </script>
+</body>
+</html>

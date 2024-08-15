@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays of object in javascript</h1>
+
+    <script>
+        // syntax for creating an array of Object
+        // let object = [
+        //     {
+        //         propertyName: propertyValue
+        //         propertyName2: proprtyValue2
+        //     }
+        // ]
+
+        // example:
+        let users = [
+            {
+                id: 1,
+                name: 'captain Rogger',
+                address: 'UK',
+                stack: 'frontend engineer'
+            },
+            {
+                id: 2,
+                companyName: 'N-Tech system',
+                address: 'Akure',
+                stack: 'tech institution'
+            },
+            {
+                id: 3,
+                name: 'Jackson Rauce',
+                address: 'bangledesh',
+                stack: 'backend engineer'
+            }
+        ]
+
+        // accessing the items of an array of objects
+        console.log(users);
+        console.log(users[0]);
+
+        // looping through the arrays of object 
+        users.map(users=> {
+            console.log(users.id);
+            console.log(users.stack);
+        });
+
+
+    </script>
+</body>
+</html>

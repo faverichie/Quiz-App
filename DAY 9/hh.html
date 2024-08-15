@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let 
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>implement the number counter using event listener</h1>
+
+    <button>INCREASE</button>
+    <BUTton>DECREASE</BUTton>
+    <BUTTon>RESET</BUTTon>
+    <h1 id ="num-value"></h1>
+
+    
+
+    <script>
+        let btn = document.querySelectorAll("button");
+        let num = document.getElementById("num-value");
+        let count = 0;
+        // console.log(btns);
+        // console.log(btns[0]); this will console the first button
+
+        function changeValue() {
+            if (count > 0) {
+                num.style.color = "green";
+            } else if (count < 0) {
+                 num.style.color = "red";
+            } else {
+                num.style.color = "black";
+            }   
+            num.innerHTML = count;
+        }
+
+        // here we want to work on each button
+        // INCREASE BTN
+        btn[0].addEventListener('click', () => {
+        count++;
+        changeValue();
+    })
+
+    // here we want to work on each button
+        // DECREASE BTN
+        btn[0].addEventListener('click', () => {
+        count--;
+        changeValue();
+        })
+
+        btn[2].addEventListener('click', () => {
+            count = 0;
+            changeValue();
+        })
+
+        
+
+    </script>
+</body>
+</html>

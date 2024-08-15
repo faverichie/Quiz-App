@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <form action="" method="post" id="form" name="form">
+        <label for="name">username:</label>
+        <input type="text" name="name" id="name" placeholder="enter your name" required>
+
+        <label for="pass">password:</label>
+        <input type="pass" name="name" id="pass" placeholder="enter your password" required>
+
+        <label for="pass">confirm password:</label>
+        <input type="pass" name="name" id="pass" placeholder="confirm your password" required>
+    </form>
+
+    <script>
+        // we now start at different for EventSource
+
+        // we have: focus, blur, active, change and input events
+
+        let form = document.forms;
+
+        let username = form['form'].elements[0]
+
+        username.addEventListener('input', function () {
+            console.table('you entered ${username.value}');
+        }, false);
+    </script>
+
+
+</body>
+
+</html>

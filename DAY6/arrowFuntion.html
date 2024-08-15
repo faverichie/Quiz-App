@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrow function in javascript</h1>
+
+    <script>
+        // syntax:
+        // let myFunction = () => {
+        //     code/statement to execute
+        // }
+
+        // code to execute when the function has only one parameter
+        // let myFunction = parameter => {code/statement to execute}
+
+        const customerName = name => console.log(`Hello, ${name}, we're calling from the customer service`);
+        customerName('Ritchie');
+
+        // example2
+        const customerNameBranch = (name, branch) => {
+            return `Hello ${name}, we need to see you at our ${branchName}`
+        }
+        console.log(customerNameBranch('Akeem', 'Ondo Branch'));
+    </script>
+</body>
+</html>
